@@ -60,13 +60,13 @@ public class StringsAndThings {
         int isNot = 0;
 
         Pattern pattern = Pattern.compile(is);
-        Matcher matcher = pattern.matcher(is);
+        Matcher matcher = pattern.matcher(input);
         while(matcher.find()){
             isIs++;
         }
 
         Pattern pattern1 = Pattern.compile(not);
-        Matcher matcher1 = pattern1.matcher(not);
+        Matcher matcher1 = pattern1.matcher(input);
         while (matcher1.find()){
             isNot++;
         }
